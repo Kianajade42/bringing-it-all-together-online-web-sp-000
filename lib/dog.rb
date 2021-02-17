@@ -51,7 +51,7 @@ def self.create(name:, breed:)
     breed = row[2]
     self.new(id: id, name: name, breed: breed)
   end
-  
+
 def self.find_by_id(id)
       sql = <<-SQL
         SELECT *
@@ -83,7 +83,7 @@ def self.find_or_create_by(name:, breed:)
     end
     dog
   end
-  
+
 def self.find_by_name(name)
     sql = <<-SQL
       SELECT *
